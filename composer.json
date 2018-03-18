@@ -1,0 +1,50 @@
+{
+  "name": "arndtteunissen/realurl-clear-cache-command",
+  "type": "typo3-cms-extension",
+  "description": "This package adds an extbase command to clear the realurl cache tables",
+  "license": ["GPL-2.0-or-later"],
+  "keywords": [
+    "TYPO3 CMS",
+    "realurl",
+    "cache"
+  ],
+  "homepage": "https://github.com/arndtteunissen/realurl-clear-cache-command",
+  "support": {
+    "issues": "https://github.com/arndtteunissen/realurl-clear-cache-command/issues"
+  },
+  "authors": [
+    {
+      "name": "Tim Schreiner",
+      "email" :"schreiner@arndtteunissen.de",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.0 <7.3",
+    "typo3/cms-core": "^8.7",
+    "dmitryd/typo3-realurl": "^2.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "Arndtteunissen\\RealurlClearCache\\": "Classes"
+    }
+  },
+  "replace": {
+    "realurl_clear_cache_command": "self.version",
+    "typo3-ter/realurl-clear-cache-command": "self.version"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  }
+}
