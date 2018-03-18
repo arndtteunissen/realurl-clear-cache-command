@@ -8,3 +8,5 @@ Only works for TYPO3 8.7 because it uses the Doctrine QueryBuilder.
 An installation with composer is suggested. Use 
 
 `composer require arndtteunissen/realurl-clear-cache-command`
+
+to install this extension.
